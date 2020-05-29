@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
+    "color": "^3.1.2",
     "gatsby": "^2.21.37",
     "gatsby-plugin-nprogress": "^2.3.2",
     "gatsby-plugin-page-creator": "^2.3.7",
@@ -26,6 +27,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
+    "react-icons": "^3.10.0",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {

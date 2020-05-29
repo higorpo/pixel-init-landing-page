@@ -1,2 +1,3 @@
-#  gatsby-starter
-This Gatsby launcher creates a project using TypeScript by default. In addition, it already adds the plugins for styled-components, loading bar for changing pages, page creator to ignore styles.ts files and react helmet. It also adds styling-components theming. Keep the project as simple as possible!
+#  Pixel Init 
+## Landing page para inscrições dos participantes do evento.
+
