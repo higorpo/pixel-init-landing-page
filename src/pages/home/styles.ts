@@ -5,6 +5,8 @@ const logoPixel = require("../../assets/logo-pixel.png");
 
 export const Container = styled.div`
     background-color: ${props => props.theme.background};
+    max-width: 1349px;
+    margin: 0 auto;
 `;
 
 export const Header = styled.div`
@@ -15,6 +17,7 @@ export const Header = styled.div`
     align-content: center;
     padding: 60px 80px;
     height: -webkit-fill-available;
+    max-height: 657px;
 
     background-image: url(${background});
     background-repeat: no-repeat;

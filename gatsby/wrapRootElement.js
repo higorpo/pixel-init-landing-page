@@ -9,7 +9,8 @@ export function wrapRootElement({ element }) {
         <ThemeProvider theme={theme}>
             <div style={{
                 background: theme.background,
-                margin: 0
+                margin: 0,
+                height: "auto"
             }}>
                 {element}
             </div>
