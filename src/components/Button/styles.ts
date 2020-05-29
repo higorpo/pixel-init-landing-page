@@ -12,4 +12,9 @@ export const ButtonStyled = styled.button`
     border-bottom: 10px solid;
     border-bottom-color: ${props => color(props.theme[props.color]).darken(0.5).rgb().string()};
     cursor: pointer;
+
+    &:active {
+        border-bottom: 0px;
+        margin-top: 10px
+    }
 `;

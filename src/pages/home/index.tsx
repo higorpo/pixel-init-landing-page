@@ -133,16 +133,13 @@ const home: React.FC = () => {
 
             <Section>
                 <Title>Patrocinadores</Title>
-                <Content>
+                <Content style={{ marginBottom: 20 }}>
                     Ajude-nos a realizar este evento.
                     Seja um dos patrocinadores do evento e tenha sua empresa destacada em nossos espaços dedicados a publicidade.
                     Entre em contato conosco para saber mais!
                 </Content>
                 <Button
-                    color="accent"
-                    style={{
-                        marginTop: 20
-                    }}>
+                    color="accent">
                     patrocinar
                 </Button>
             </Section>

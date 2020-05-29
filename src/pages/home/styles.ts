@@ -19,6 +19,10 @@ export const Header = styled.div`
     background-image: url(${background});
     background-repeat: no-repeat;
     background-position: right;
+
+    @media screen and (max-width: 600px) {
+        padding: 20px;
+    }
 `;
 
 export const HeaderDetails = styled.div`
@@ -26,18 +30,55 @@ export const HeaderDetails = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
+    /* @media screen and (max-width: 865px) {
+        align-items: center;
+    } */
+
+    @media screen and (max-width: 600px) {
+        align-items: center;
+
+        > button {
+            font-size: 27px;
+            white-space: nowrap;
+            width: 100%;
+        }
+    }
 `;
 
 export const LogoImage = styled.img.attrs({
     src: logo
 })` 
     width: 250px;
+
+    @media screen and (max-width: 950px) {
+        width: 160px;
+    }
 `;
 
 export const EventDescription = styled.h1`
     max-width: 60%;
     margin: 30px 0px;
     margin-top: 60px;
+    
+    @media screen and (max-width: 980px) {
+        font-size: 27px;
+        line-height: 30px;
+    }
+
+    @media screen and (max-width: 860px) {
+        max-width: 75%;
+    }
+
+    @media screen and (max-width: 865px) {
+        max-width: 85%;
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-width: none;
+        text-align: center;
+    }
 `;
 
 export const EventInfos = styled.div`
@@ -45,6 +86,18 @@ export const EventInfos = styled.div`
     flex-direction: row;
     position: absolute;
     right: 80px;
+
+    @media screen and (max-width: 865px){
+        align-self: flex-end;
+        left: 80px;
+        right: 0px;
+    }
+
+    @media screen and (max-width: 600px)  {
+        flex-direction: column;
+        left: 20px;
+        margin-top: -10px;
+    }
 `;
 
 export const EventInfo = styled.div`
@@ -94,11 +147,40 @@ export const DaysLeftBanner = styled.div`
             text-transform: none;
         }
     }
+
+    @media screen and (max-width: 780px) {
+        > span {
+            font-size: 30px;
+
+            &:first-child {
+                max-width: 70%;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 775px) {
+        padding-left: 35px; 
+        padding-right: 35px; 
+        height: 105px;
+        
+        > span {
+            font-size: 20px;
+        }
+    }
 `;
 
 export const Section = styled.div`
     margin-top: 125px;
     padding: 0px 80px;
+
+    @media screen and (max-width: 800px) {
+        margin-top: 85px;
+    }
+
+    @media screen and (max-width: 775px) {
+        padding-left: 35px; 
+        padding-right: 35px; 
+    }
 `;
 
 export const Title = styled.h1`
@@ -107,12 +189,22 @@ export const Title = styled.h1`
     font-weight: bold;
     margin: 0px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 35px;
+        line-height: 35px;
+    }
 `;
 
 export const Content = styled.p`
     font-size: 20px;
     line-height: 30px;
     margin: 0px;
+
+    @media screen and (max-width: 800px) {
+        font-size: 15px;;
+        line-height: 30px;
+    }
 `;
 
 export const List = styled.div`
@@ -125,6 +217,10 @@ export const List = styled.div`
         &:last-child {
             margin-right: 0px;
         }
+    }
+
+    @media screen and (max-width: 1100px) {
+        flex-wrap: wrap;
     }
 `;
 
@@ -144,6 +240,11 @@ export const ListItem = styled.div`
 
     &:hover {
         background-color: rgba(0,0,0,0.5);
+    }
+
+    @media screen and (max-width: 1100px) {
+        flex: 1;
+        min-width: 200px;
     }
 `;
 
@@ -180,6 +281,41 @@ export const BannerDownloadApp = styled.div`
         flex: 1;
         padding-right: 70px;
     }
+
+    @media screen and (max-width: 1095px) {
+        > span {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 840px) {
+        > span {
+            font-size: 20px;
+            align-self: center;
+        }
+    }
+
+    @media screen and (max-width: 775px) {
+        margin-left: 35px; 
+        margin-right: 35px; 
+    }
+
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        padding: 30px;
+
+        > span {
+            font-size: 30px;
+            margin-bottom: 20px;
+            padding: 0px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        > span {
+            font-size: 20px;
+        }
+    }
 `;
 
 export const LogoPixel = styled.img.attrs({
@@ -189,4 +325,8 @@ export const LogoPixel = styled.img.attrs({
     left: 50%;
     position: relative;
     transform: translateX(-50%);
+
+    @media screen and (max-width: 720px) {
+        width: 40%;
+    }
 `;
