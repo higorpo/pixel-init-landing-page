@@ -46,11 +46,11 @@ https://github.com/higorpo/pixel-init-landing-page.git
 
 Depois instale as dependências do projeto usando Yarn ou NPM, abaixo um exemplo usando Yarn.
 ```sh
-    yarn install
+yarn install
 ```
 
 Depois execute o projeto
 
 ```sh
-    yarn start
+yarn start
 ```
