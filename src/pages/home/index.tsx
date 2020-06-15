@@ -7,6 +7,8 @@ const home: React.FC = () => {
     const [timeRemaining, setTimeRemaining] = useState<string>("...");
 
     useEffect(() => {
+        document.title = "Pixel Init 2020";
+
         calculateTimeRemaining();
         setInterval(calculateTimeRemaining, 60 * 1000)
     }, [])
@@ -16,7 +18,7 @@ const home: React.FC = () => {
      */
     const calculateTimeRemaining = useCallback(() => {
         // @ts-ignore
-        var delta = Math.abs(new Date("2020-07-09 18:00") - new Date()) / 1000;
+        var delta = Math.abs(new Date("2020-07-09 18:30") - new Date()) / 1000;
 
         var days = Math.floor(delta / 86400);
         delta -= days * 86400;
@@ -49,9 +51,9 @@ const home: React.FC = () => {
                 <HeaderDetails>
                     <LogoImage />
                     <EventDescription>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        Faça parte da 2ª edição do evento tecnológico da Pixel, desta vez totalmente online.
                     </EventDescription>
-                    <Button fontSize={38}>inscrever-se</Button>
+                    <a href="https://www.sympla.com.br/pixel-init__867450"><Button fontSize={38}>inscrever-se</Button></a>
                 </HeaderDetails>
                 <EventInfos>
                     <EventInfo>
@@ -76,7 +78,7 @@ const home: React.FC = () => {
             <Section>
                 <Title>Sobre o evento</Title>
                 <Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    O "Pixel Init" é o evento de tecnologia da Pixel, empresa júnior de Sistemas de Informação e Ciências da Computação da Universidade Federal de Santa Catarina (UFSC). O "Init" de seu nome faz alusão à inicialização do usuário no mundo tecnológico, visto que a Pixel acolhe graduandos dos referidos cursos. Sua primeira edição aconteceu em 2019.2 e foi realizada de modo presencial. Agora, na sua versão 100% remota, o "Pixel Init" busca reunir três âmbitos: o profissional da área, as pesquisas tecnológicas e as tendências do mercado de TI no Brasil e no mundo - com especial consideração à crise do Covid-19 de 2020.
                 </Content>
             </Section>
 
@@ -89,10 +91,10 @@ const home: React.FC = () => {
                             <MdRecordVoiceOver />
                         </ListIcon>
                         <ListTitle>
-                            Otimos palestrantes
+                            Palestrantes
                         </ListTitle>
                         <ListDescription>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Eles são profissionais da área, pesquisadores e intelectuais, ou empreendedores do mercado de TI, buscando entregar seu ângulo de experiência para você
                         </ListDescription>
                     </ListItem>
                     <ListItem>
@@ -103,7 +105,7 @@ const home: React.FC = () => {
                             Networking
                         </ListTitle>
                         <ListDescription>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Possibilidade de contato com diversos profissionais da região de Florianópolis e de todo Brasil para trocar informações e experiências de trabalho
                         </ListDescription>
                     </ListItem>
                     <ListItem>
@@ -111,10 +113,10 @@ const home: React.FC = () => {
                             <MdGroup />
                         </ListIcon>
                         <ListTitle>
-                            Novas amizades
+                            Hackathon
                         </ListTitle>
                         <ListDescription>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ambiente colaborativo para você colocar em prática seu conhecimento e experiência em troca de resultados, reconhecimento e prêmios
                         </ListDescription>
                     </ListItem>
                     <ListItem>
@@ -125,7 +127,7 @@ const home: React.FC = () => {
                             Diversão
                         </ListTitle>
                         <ListDescription>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Buscamos promover um ambiente que seja informativo mas também divertido, para que você compreenda as novidades da área de forma leve
                         </ListDescription>
                     </ListItem>
                 </List>
@@ -134,21 +136,23 @@ const home: React.FC = () => {
             <Section>
                 <Title>Patrocinadores</Title>
                 <Content style={{ marginBottom: 20 }}>
-                    Ajude-nos a realizar este evento.
-                    Seja um dos patrocinadores do evento e tenha sua empresa destacada em nossos espaços dedicados a publicidade.
-                    Entre em contato conosco para saber mais!
+                    Afim de patrocinar o evento? Entre em contato conosco e seja um de nossos patrocinadores. Você tem a sua empresa destacada em nossos espaços de publicidade online acessados por um público interessado em tecnologia de todas as partes do país!
                 </Content>
-                <Button
-                    color="accent">
-                    patrocinar
-                </Button>
+                <a target="__blank" href="mailto:pixelinit@ejpixel.com.br">
+                    <Button
+                        color="accent">
+                        patrocinar
+                    </Button>
+                </a>
             </Section>
             <BannerDownloadApp>
                 <span>Baixe o aplicativo do Pixel Init no seu celular!</span>
-                <Button
-                    color="primary">
-                    baixar app
-                </Button>
+                <a href="javascript:alert('Em breve!')">
+                    <Button
+                        color="primary">
+                        baixar app
+                    </Button>
+                </a>
             </BannerDownloadApp>
 
             <LogoPixel />

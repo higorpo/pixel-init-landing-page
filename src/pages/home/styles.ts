@@ -41,11 +41,19 @@ export const HeaderDetails = styled.div`
     @media screen and (max-width: 600px) {
         align-items: center;
 
-        > button {
-            font-size: 27px;
-            white-space: nowrap;
+        > a {
             width: 100%;
+            > button {
+                font-size: 27px;
+                white-space: nowrap;
+                width: 100%;
+            }
         }
+    }
+    
+    @media screen and (max-width: 523px) {
+        justify-content: flex-start;
+        padding-top: 30px;
     }
 `;
 
@@ -77,10 +85,18 @@ export const EventDescription = styled.h1`
         max-width: 85%;
         margin-top: 40px;
     }
+    
+    @media screen and (max-width: 825px) {
+        font-size: 26px;
+    }
 
     @media screen and (max-width: 600px) {
         max-width: none;
         text-align: center;
+    }
+    
+    @media screen and (max-width: 415px) {
+        font-size: 22px;
     }
 `;
 
@@ -94,6 +110,11 @@ export const EventInfos = styled.div`
         align-self: flex-end;
         left: 80px;
         right: 0px;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 695px)  {
+        margin-top: 30px;
     }
 
     @media screen and (max-width: 600px)  {
@@ -132,7 +153,7 @@ export const InfoLabel = styled.span`
 `;
 
 export const DaysLeftBanner = styled.div`
-    background: linear-gradient(90deg, #608E2E 0%, #B04462 50%);
+    background: linear-gradient(90deg, #833632 0%, #327E83 50%);
     height: 165px;
     display: flex;
     flex-direction: row;
@@ -225,6 +246,12 @@ export const List = styled.div`
     @media screen and (max-width: 1100px) {
         flex-wrap: wrap;
     }
+    
+    @media screen and (max-width: 600px) {
+        > div {
+            margin-right: 0px;
+        }
+    }
 `;
 
 export const ListItem = styled.div`
@@ -249,6 +276,7 @@ export const ListItem = styled.div`
         flex: 1;
         min-width: 200px;
     }
+    
 `;
 
 export const ListIcon = styled.div`
